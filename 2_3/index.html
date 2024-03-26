@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>アニメーション</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    $('#button').on('click',function(){
+      $(this).animate({right:'30%',bottom: '30%'},{duration: 'slow',easing: 'swing'});
+    });
+  });
+  </script>
+</head>
+<body>
+  <div id="button">
+    <p>button</p>
+  </div><!-- button -->
+</body>
+</html>
